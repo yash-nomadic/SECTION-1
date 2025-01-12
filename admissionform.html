@@ -13,18 +13,18 @@
     <form>
 
         <label>Student Name</label>
-             <input type="text" required minlength="3">
+        <input type="text" required minlength="3">
         <br>
         <label>Student Email</label>
-            <input type="email">
+        <input type="email">
         <br><br>
 
         <label>Date Of Birth</label>
-            <input type="date">
+        <input type="date">
         <br><br>
         <label>GENDER</label>
-            <input type="radio"name='gender'>Male
-            <input type="radio"name='gender'>Female
+        <input type="radio" name='gender'>Male
+        <input type="radio" name='gender'>Female
         <br><br>
 
         <label>Select Course</label>
@@ -43,9 +43,28 @@
             <option>LPCPS</option>
             <option>SRMU</option>
         </datalist>
+
         <br><br>
+        
         <label for="image">Upload Image</label>
-        <input type="file" id="image" accept="image/*">
+        <input hidden type="file" id="image" accept="image/*">
+    
+        <br><br>
+
+
+        <input type="checkbox" required>
+        <label for="terms">Accept Terms& Condition</label>
+        
+        <br>
+        
+        <input type="checkbox">
+        <label for="news">Subscribe to Newsletter</label>
+        <br><br>
+        <details>
+            <summary>Terms & Conditions</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque molestias enim ut eos mollitia magnam eligendi quo voluptatem, voluptates blanditiis ipsum dolor, labore porro nulla cumque ullam, autem voluptas eveniet?</p>
+        </details>
+
 
 
         <br><br>
