@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Card</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    
+    <style>
+
+        .card{
+            border: 2px solid black;
+            width: 75%;
+            border-radius: 10px;
+            padding: 30px;
+            box-sizing: border-box;
+            box-shadow: 3px 5px 5px 3px rgba(0, 0, 0, 0.432);
+            background-color:white ;
+        }
+
+        body{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: aqua;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+
+        .contactus{
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            justify-content: left;
+        }
+
+
+
+        .info{
+            border: 2px solid black;
+            width: 25%;
+            border-radius: 10px;
+            padding: 30px;
+            box-sizing: border-box;
+            box-shadow: 3px 5px 5px 3px rgba(0, 0, 0, 0.432);
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: flex-start;
+            
+        }
+
+
+        .form{
+            display: block;
+            width: 1%;
+            padding: 4px;
+            border-radius: 55px;
+            margin-bottom: 15px;
+        }
+
+        .submit-btn{
+            display: block;
+            width: 200px;
+            color: black;
+            margin-top: 40px;
+            padding-right: 40px;
+            padding-inline: 25px;
+            background-color: aqua;
+            cursor: pointer;
+            border-radius: 4px;
+            
+             
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="card">
+        
+        <div class="contactus">
+
+            <h2>Contact Us</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum aliquid autem dolores perferendis nihil dolorem consequatur eos fuga laborum error adipisci omnis eligendi, nulla repudiandae dolor ut doloribus libero minus!</p>
+
+                <img src="/message logo.webp" alt="message" height="50">
+                <h3>abc@gmail.com</h3></a>
+                <br>
+
+                <img src="/call logo.webp" alt="call" height="50">
+                <h3>+912845484545</h3></a>
+            </h4>
+        </div>
+
+        <div class="info">
+            <h2>Get In Touch</h2>
+
+            <form class="form">
+
+                <label for="name">Name</label>
+                <br>
+                <input type="text" class="text-input" id="name" placeholder="Enter your name">
+
+                <br>
+
+                <label for="email">Email</label>
+                <br>
+                <input type="email" class="text-input" id="email" placeholder="Enter your email">
+
+                <br>
+
+                <label for="message">Message</label>
+                <br>
+                <input type="text" class="text-input" id="message" placeholder="Enter your message here">
+
+                <br>
+
+                <button type="button" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
