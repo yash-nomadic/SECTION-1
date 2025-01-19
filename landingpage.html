@@ -5,26 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Landing Page </title>
 </head>
 
 <body>
 
-    <header>
-        <nav class="border bg-black-500">
-            <div class="flex justify-center gap-16 bg-black-500 w-full ">
-                <div>
-                    home
-                </div>
-                <div>
-                    about
-                </div>
-                <div>
-                    contact us
-                </div>
-            </div>
-        </nav>
-
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Tailblocks</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-gray-900">First Link</a>
+                <a class="mr-5 hover:text-gray-900">Second Link</a>
+                <a class="mr-5 hover:text-gray-900">Third Link</a>
+                <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+            </nav>
+            <button
+                class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
     </header>
 
 
@@ -33,32 +45,66 @@
 
         <article>
             <section class="bg-blue-200 min-h-[60vh]">
-                <div class="border-2 max-w-[80%] mx-auto h-full py-8 md:py-0">
+                <div class=" max-w-[80%] mx-auto h-full py-8 md:py-0">
                     <div class="grid grid-cols-1 md:grid-cols-2 h-full">
 
                         <div class="space-y-4 my-auto text-center md:text-left">
                             <h1 class="text-4xl font-bold">My Website Title</h1>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, perferendis necessitatibus dicta delectus quos suscipit temporibus natus odio. Velit tempora, molestias earum obcaecati corrupti consectetur sed repellat dignissimos dolores perferendis?
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, perferendis
+                                necessitatibus dicta delectus quos suscipit temporibus natus odio. Velit tempora,
+                                molestias earum obcaecati corrupti consectetur sed repellat dignissimos dolores
+                                perferendis?
                             </p>
 
                             <div class="flex gap-4 justify-center md:justify-start">
-                                <button class="px-3 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Primary</button>
-                                <button class="px-3 py-2 border-2 border-blue-500 text-blue-500 rounded">Secondary</button>
+                                <button
+                                    class="px-3 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Primary</button>
+                                <button
+                                    class="px-3 py-2 border-2 border-blue-500 text-blue-500 rounded">Secondary</button>
 
                             </div>
                         </div>
-                        
+
 
 
                         <div class="my-auto order-first md:order-last">
-                            <img src=" https://cdn3d.iconscout.com/3d/premium/thumb/businessman-reading-business-report-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--to-do-list-note-read-pack-illustrations-2384306@0.png?f=webp" alt="image">
-                        
+                            <img src=" https://cdn3d.iconscout.com/3d/premium/thumb/businessman-reading-business-report-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--to-do-list-note-read-pack-illustrations-2384306@0.png?f=webp"
+                                alt="image">
+
                         </div>
 
                     </div>
 
                 </div>
             </section>
+        </article>
+
+        <article>
+
+            <section>
+                <div>
+
+                    <h2>Our Features</h2>
+
+                    <div class="border-2 border-red-500 grid grid-cols-3 ">
+                        <div class="border-2 border-blue-500">
+                            <i class="fa-solid fa-rocket"></i>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+            </section>
+
         </article>
 
     </main>
