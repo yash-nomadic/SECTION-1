@@ -23,3 +23,23 @@ do{
     b++;
     
 }while(b<20);
+
+//WAP to reverse number
+console.log('reverse a number');
+
+
+let num= 321;
+let reverse=0;
+console.log(num);
+
+while(num>0){
+    let d= num%10;
+    reverse= reverse*10 + d;
+    num= parseInt(num/10);
+    
+}
+
+console.log(reverse);
+
+
+
