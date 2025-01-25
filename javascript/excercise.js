@@ -50,21 +50,15 @@ if(isprime){
 let num4=121;
 let rev=0;
 let copy=num4;
-while(num4>0){
-    let d=num4%10;
-    rev=rev*10+d;
+while(num>0){
+    let d= num%10;
+    // palindrome = palindrome*10+d;
+    num= parseInt(num/10);
     
-    if(copy===rev){
-        console.log('this number is palindrome');
-        break;
-        
-    }else{
-        console.log('this number is not palindrome');
-        break;
-        
-    }
-     
 }
+console.log(copy);
+
+
 
 // WAP to print all perfect squares in range of 10 to 200.
 console.log('perfect square between 10 to 200');
