@@ -45,8 +45,86 @@ if(isprime){
     
 }
 
+//WAP to check if a number is palindrome or not
+
+let num4=121;
+let rev=0;
+let copy=num4;
+while(num4>0){
+    let d=num4%10;
+    rev=rev*10+d;
+    
+    if(copy===rev){
+        console.log('this number is palindrome');
+        break;
+        
+    }else{
+        console.log('this number is not palindrome');
+        break;
+        
+    }
+     
+}
+
+// WAP to print all perfect squares in range of 10 to 200.
+console.log('perfect square between 10 to 200');
+for (let i=10; i<=200; i++){
+    if(Math.sqrt(i)%1==0){
+        console.log(i);
+    }
+}
+
+//WAP to check if a number is Armstrong.
+const num5=153;
+let sum=0;
+copy=num5;
+while(num5>0){
+    let d=num5%10;
+    sum=sum+d**3;
+    if(copy===sum){
+        console.log('this number is armstrong number');
+        break;
+    }else{
+        console.log('this number is not armstrong number');
+        break;
+    }
+
+}
+
+
+//WAP to check if a number is positive, negative or equal to zero
+
+let a=-6;
+if(a>0){
+    console.log('a is positive number');
+    }else if(a<0){
+        console.log('a is negative number');
+    }else{
+        console.log('a is equal to zero');
+        
+    }
+
+//WAP to find the greatest of three numbers.
+
+let x=54;
+let y=65;
+let z=13;
+
+if(x>y && x>z){
+    console.log('x is greatest number');
+    }else if(y>x && y>z){
+        console.log('y is greatest number');
+    }else{
+        console.log('z is greatest number');
+        
+    } 
 
 
 
 
- 
+
+
+
+
+
+    
