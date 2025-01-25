@@ -46,18 +46,24 @@ if(isprime){
 }
 
 //WAP to check if a number is palindrome or not
-
-let num4=121;
-let rev=0;
-let copy=num4;
-while(num>0){
-    let d= num%10;
-    // palindrome = palindrome*10+d;
-    num= parseInt(num/10);
+let number = 12321;
+let reverse = 0;
+let temp = number;
+while(number > 0){
+    // console.log(reverse);
+    // console.log(num);
     
+    let d = number % 10;
+    reverse = reverse * 10 + d;
+    number = parseInt(number/10);
 }
-console.log(copy);
+console.log(temp);
 
+if(reverse === temp){
+    console.log('Palindrome');
+}else{
+    console.log('Not Palindrome');
+}
 
 
 // WAP to print all perfect squares in range of 10 to 200.
@@ -69,22 +75,24 @@ for (let i=10; i<=200; i++){
 }
 
 //WAP to check if a number is Armstrong.
-const num5=153;
-let sum=0;
-copy=num5;
-while(num5>0){
-    let d=num5%10;
-    sum=sum+d**3;
-    if(copy===sum){
-        console.log('this number is armstrong number');
-        break;
-    }else{
-        console.log('this number is not armstrong number');
-        break;
-    }
-
+let num2 = 406;
+let armstrong = 0;
+let temp2 = num2;
+while(num2 > 0){
+    // console.log(reverse);
+    // console.log(num);
+    
+    let d = num2 % 10;
+    armstrong = armstrong + d ** 3;
+    num2 = parseInt(num2/10);
 }
+console.log('output', armstrong);
 
+if(armstrong === temp2){
+    console.log('Armstrong');
+}else{
+    console.log('Not Armstrong');
+}
 
 //WAP to check if a number is positive, negative or equal to zero
 
