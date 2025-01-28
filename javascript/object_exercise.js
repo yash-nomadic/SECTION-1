@@ -63,8 +63,8 @@ const smartphoneLists =[
 // access price of the smartphone
 
 console.log(smartphoneLists[2].colors[1]);
-//Adding color in last array 
 
+//Adding color in last array
 smartphoneLists[smartphoneLists.length-1].colors.splice(1,0,'Red')
 console.log(smartphoneLists);
 
