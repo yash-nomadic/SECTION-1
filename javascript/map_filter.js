@@ -70,7 +70,7 @@ const fah = Celsius.map((n) => {return n*9/5 + 32})
 console.log(fah);
 
 
-//. Given an array of strings ["apple", "banana", "cherry", "date"], create a new array that contains only the first character of each string.
+//Given an array of strings ["apple", "banana", "cherry", "date"], create a new array that contains only the first character of each string.
 
 console.log('First character of each string');
 
@@ -93,6 +93,10 @@ console.log(length);
 
 
      
+//filter operation
 
+const oddnums= myrarr.filter( (n) => { return n%2!== 0})
+
+console.log(oddnums);
 
 
