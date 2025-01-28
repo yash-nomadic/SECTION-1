@@ -94,9 +94,26 @@ console.log(length);
 
      
 //filter operation
+console.log('odd number from myarr');
 
 const oddnums= myrarr.filter( (n) => { return n%2!== 0})
 
 console.log(oddnums);
 
+// prices=[23000,4500,2800,1850]
+console.log('prices between 10000 to 2000');
+
+const prices1 = prices.filter((n) => {return 10000>=n && n>=2000})
+console.log(prices1);
+
+
+//WAP to filter out all names having length less equal to or greater than
+
+console.log('length of names');
+
+//['Raju', 'Ramu', 'Kaliya', 'Yash']
+// const bignames= names.filter((n) => {return n.length >=5})
+const bignames= names.map((n) => {return n.length >=5})
+
+console.log(bignames);
 
